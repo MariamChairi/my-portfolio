@@ -1,10 +1,9 @@
 # 👩‍💻 Mariam Chairi - Portfolio
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository=MariamChairi/my-portfolio)
+Link : https://vercel.com/mariam-chairis-projects/mariam-chairi-portfolio
 
 **Portfolio moderne avec Next.js + Tailwind CSS + shadcn/ui - Dark Terminal Theme**
-
-![Screenshot](https://via.placeholder.com/1200x630/1e1e2e/ffffff?text=Mariam+Chairi+Portfolio)
 
 ## 🚀 [Démo Live](https://your-portfolio.vercel.app)
 [![Vercel](https://img.shields.io/badge/Vercel-Live-000000?style=flat&logo=vercel)](https://your-portfolio.vercel.app)
