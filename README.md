@@ -1,15 +1,15 @@
 # 👩🏻‍💻 Mariam Chairi - Portfolio
 
-**Portfolio moderne avec Next.js + Tailwind CSS + shadcn/ui - Dark Terminal Theme**
+**Modern portfolio with Next.js + Tailwind CSS + shadcn/ui - Dark Terminal Theme**
 
 [![Deploy with Vercel](https://vercel.com/button)](https://mariam-chairi-portfolio.vercel.app)
 
 ## ✨ Features
-- 🎨 **Dark Terminal UI** - Design glassmorphism épuré
-- ⚡ **App Router** - Navigation fluide
-- 🎯 **Skills Interactives** - Scroll custom dark
-- 👤 **Profil + Formation** - Section About élégante
-- 📞 **Contact Direct** - LinkedIn + GitHub
+- 🎨 **Dark Terminal UI** - Sleek glassmorphism design
+- ⚡ **App Router** - Smooth navigation
+- 🎯 **Interactive Skills** - Custom dark scrollbars
+- 👤 **Profile + Education** - Elegant About section
+- 📞 **Direct Contact** - LinkedIn + GitHub
 
 ## 🛠️ Tech Stack
 
