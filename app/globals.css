@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* VOS COULEURS NOIR/GRIS */
+@theme {
+  --color-background: #0a0a0a;
+  --color-foreground: #adb5bd;
+  --color-primary: #6c757d;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #343a40;
+  --color-secondary-foreground: #adb5bd;
+  --color-muted: #495057;
+  --color-muted-foreground: #adb5bd;
+  --color-accent: #4a5759;
+  --color-card: #212529;
+  --color-border: #495057;
+  --color-ring: #6c757d;
+  --radius: 1rem;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: ui-sans-serif, system-ui, sans-serif;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* NAV FIXÉ - Z-INDEX + SCROLL */
+nav {
+  z-index: 1000 !important;
+  position: sticky !important;
+}
+
+/* CURSEURS TERMINAL */
+.cursor-pointer:hover {
+  cursor: pointer !important;
+}
+
+.cursor-text {
+  cursor: text !important;
+}
+
+/* BOUTONS + NAV - Curseur main */
+button, [role="button"], .cursor-pointer {
+  cursor: pointer !important;
+}
+
+/* ANIMATIONS 3D CORRIGÉES - FLUIDES */
+.perspective-1000 {
+  perspective: 800px;
+  transform-style: preserve-3d;
+}
+
+.folder-3d {
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
+  transform-style: preserve-3d;
+}
+
+.folder-3d:hover {
+  transform: translateY(-8px) rotateY(-8deg) rotateX(4deg) scale(1.02) !important;
+  box-shadow: 0 20px 40px -10px rgba(108, 117, 125, 0.3) !important;
+}
+
+.folder-open {
+  animation: folderOpen 0.5s cubic-bezier(0.34, 1.56, 0.64, 1) forwards !important;
+  z-index: 100 !important;
+}
+
+@keyframes folderOpen {
+  0% { transform: scale(1) rotateY(0deg); }
+  50% { transform: scale(1.05) rotateX(-5deg); }
+  100% { transform: scale(1.03) rotateX(-3deg) translateZ(20px); }
+}
+
+/* BOUTONS CD - Par défaut PAS cliquable */
+.btn-cd-default {
+  pointer-events: none !important;
+  opacity: 0.7;
+}
+
+.btn-cd-default:hover {
+  cursor: default !important;
+}
+
+/* TERMINAL FONT */
+.font-mono {
+  font-family: 'SF Mono', 'Monaco', 'Roboto Mono', 'Inconsolata', monospace;
+}
+
+/* GLASSMORPHISM */
+.glass {
+  background: rgba(33, 37, 41, 0.85);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(73, 80, 87, 0.4);
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 3s linear infinite;
 }
