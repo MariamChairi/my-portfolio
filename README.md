@@ -2,7 +2,7 @@
 
 **Portfolio moderne avec Next.js + Tailwind CSS + shadcn/ui - Dark Terminal Theme**
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/mariam-chairis-projects/mariam-chairi-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://mariam-chairi-portfolio.vercel.app)
 
 ## 🚀 [Démo Live](https://your-portfolio.vercel.app)
 [![Vercel](https://img.shields.io/badge/Vercel-Live-000000?style=flat&logo=vercel)](https://your-portfolio.vercel.app)
