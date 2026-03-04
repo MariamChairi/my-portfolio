@@ -66,7 +66,7 @@ export default function Projects() {
           <div className="w-6 h-6 bg-green-500 rounded-full" />
           <div className="ml-4 font-mono text-sm text-muted-foreground">~/projects</div>
         </div>
-        <h1 className="text-6xl md:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
           PROJETS/
         </h1>
         <div className="text-lg text-muted-foreground font-mono">7 dossiers, 7 fichiers</div>

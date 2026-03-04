@@ -10,6 +10,7 @@
 - 🎯 **Interactive Skills** - Custom dark scrollbars
 - 👤 **Profile + Education** - Elegant About section
 - 📞 **Direct Contact** - LinkedIn + GitHub
+- 📱 **Mobile Compatible** - Responsive design for all devices
 
 ## 🛠️ Tech Stack
 

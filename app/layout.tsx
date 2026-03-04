@@ -23,33 +23,53 @@ export default function RootLayout({
           <div className="absolute top-8 right-8 w-3 h-3 bg-green-400 rounded-full animate-pulse shadow-lg after:absolute after:inset-0 after:bg-green-400 after:animate-ping after:rounded-full after:shadow-lg after:scale-150" />
         </div>
         
-        {/* NAV TERMINAL - Z-INDEX 1000 */}
-        <nav className="sticky top-0 z-[1000] backdrop-blur-2xl bg-card/95 border-b border-border/50 shadow-2xl isolate">
-          <div className="max-w-6xl mx-auto px-6 py-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-mono bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent tracking-tight cursor-pointer">
-                ~/portfolio/mariam
-              </Link>
-              <div className="flex space-x-1 text-sm font-mono bg-secondary/70 px-4 py-2 rounded-xl backdrop-blur-sm border border-border/50">
-                <Link href="/" className="px-3 py-2 rounded-lg transition-all hover:bg-primary/30 hover:scale-105 cursor-pointer">/</Link>
-                <Link href="/about" className="px-3 py-2 rounded-lg transition-all hover:bg-primary/30 hover:scale-105 cursor-pointer">about/</Link>
-                <Link href="/skills" className="px-3 py-2 rounded-lg transition-all hover:bg-primary/30 hover:scale-105 cursor-pointer">skills/</Link>
-                <Link href="/projects" className="px-3 py-2 rounded-lg transition-all hover:bg-primary/30 hover:scale-105 cursor-pointer">projects/</Link>
-                <Link href="/contact" className="px-3 py-2 rounded-lg transition-all hover:bg-primary/30 hover:scale-105 cursor-pointer">contact/</Link>
-              </div>
+        {/* NAV TERMINAL - RESPONSIVE MOBILE-FIRST */}
+        <nav className="sticky top-0 z-[1000] backdrop-blur-2xl bg-card/95 border-b border-border/50">
+          <div className="max-w-6xl mx-auto px-4 md:px-6 py-4 flex justify-between items-center">
+            <Link href="/" className="text-lg md:text-2xl font-mono">
+              ~/portfolio/mariam
+            </Link>
+
+            {/* Desktop */}
+            <div className="hidden md:flex space-x-4 font-mono text-sm">
+              <Link href="/">/</Link>
+              <Link href="/about">about/</Link>
+              <Link href="/skills">skills/</Link>
+              <Link href="/projects">projects/</Link>
+              <Link href="/contact">contact/</Link>
+            </div>
+
+            {/* Mobile Button - simplifiée sans composant externe */}
+            <div className="md:hidden">
+              <details className="cursor-pointer">
+                <summary className="list-none">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="inline">
+                    <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                    <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </summary>
+                <div className="absolute top-full left-0 right-0 flex flex-col space-y-4 p-6 bg-card border-b border-border font-mono">
+                  <Link href="/">/</Link>
+                  <Link href="/about">about/</Link>
+                  <Link href="/skills">skills/</Link>
+                  <Link href="/projects">projects/</Link>
+                  <Link href="/contact">contact/</Link>
+                </div>
+              </details>
             </div>
           </div>
         </nav>
         
         {/* CONTENU PRINCIPAL - Z-INDEX 10 */}
-        <main className="relative z-10 min-h-screen py-24 px-8 max-w-7xl mx-auto">
+        <main className="relative z-10 min-h-screen py-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
           {children}
         </main>
         
         {/* FOOTER TERMINAL */}
         <footer className="z-20 backdrop-blur-xl bg-card/95 border-t border-border/50 shadow-xl">
   <div className="max-w-6xl mx-auto px-6 py-3 text-[11px] font-mono">
-    <div className="flex items-center justify-center space-x-8 text-muted-foreground/70">
+    <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-center text-muted-foreground/70">
       <span>📁 12+ Projets</span>
       <span>•</span>
       <span>⚙️ 10+ Technos</span>

@@ -101,3 +101,11 @@ button, [role="button"], .cursor-pointer {
 .animate-spin-slow {
   animation: spin-slow 3s linear infinite;
 }
+
+html, body {
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -9,7 +9,7 @@ export default function About() {
           <div className="w-6 h-6 bg-green-500 rounded-full" />
           <div className="ml-4 font-mono text-sm text-muted-foreground">~/about</div>
         </div>
-        <h1 className="text-6xl md:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
           ABOUT/
         </h1>
         <div className="text-lg text-muted-foreground font-mono">profil, formation</div>
@@ -18,7 +18,7 @@ export default function About() {
       {/* Grille profil + formation intégrée */}
       <div className="grid lg:grid-cols-2 gap-16 items-start p-8 mb-20">
         {/* Profil - Terminal style */}
-        <div className="group h-[660px] hover:shadow-2xl relative">
+        <div className="group min-h-[500px] md:h-[660px] hover:shadow-2xl relative">
           <div className="bg-card border-2 border-slate-800/50 rounded-3xl p-8 h-full flex flex-col shadow-xl hover:border-slate-700/70 hover:shadow-black/20 glass">
             
             {/* Terminal header */}
@@ -54,10 +54,16 @@ export default function About() {
                 <h3 className="font-mono text-lg font-semibold text-slate-300 mb-4 flex items-center">
                   📚 <span className="ml-3">Languages</span>
                 </h3>
-                <div className="grid grid-cols-3 gap-2">
-                  <div className="bg-slate-800/50 px-4 py-3 rounded-xl text-xs text-slate-300 border border-slate-700/70 font-mono">🇲🇦 Arabe <strong>Native</strong></div>
-                  <div className="bg-slate-800/50 px-4 py-3 rounded-xl text-xs text-slate-300 border border-slate-700/70 font-mono">🇫🇷 Français <strong>Avancé</strong></div>
-                  <div className="bg-slate-800/50 px-4 py-3 rounded-xl text-xs text-slate-300 border border-slate-700/70 font-mono">🇺🇸 Anglais <strong>Intermédiaire</strong></div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                  <div className="bg-slate-800/50 px-3 py-2 md:px-4 md:py-3 rounded-xl text-xs md:text-sm text-slate-300 border border-slate-700/70 font-mono text-center md:text-left break-words">
+                    <span>🇲🇦</span> <span className="block md:inline">Arabe</span> <strong>Native</strong>
+                  </div>
+                  <div className="bg-slate-800/50 px-3 py-2 md:px-4 md:py-3 rounded-xl text-xs md:text-sm text-slate-300 border border-slate-700/70 font-mono text-center md:text-left break-words">
+                    <span>🇫🇷</span> <span className="block md:inline">Français</span> <strong>Avancé</strong>
+                  </div>
+                  <div className="bg-slate-800/50 px-3 py-2 md:px-4 md:py-3 rounded-xl text-xs md:text-sm text-slate-300 border border-slate-700/70 font-mono text-center md:text-left break-words">
+                    <span>🇺🇸</span> <span className="block md:inline">Anglais</span> <strong>Intermédiaire</strong>
+                  </div>
                 </div>
               </div>
             </div>
@@ -65,7 +71,7 @@ export default function About() {
         </div>
 
         {/* Formation - SIMPLE & ÉLÉGANT */}
-        <div className="group h-[660px] hover:shadow-2xl relative">
+        <div className="group min-h-[500px] md:h-[660px] hover:shadow-2xl relative">
           <div className="bg-card border-2 border-slate-800/50 rounded-3xl p-8 h-full flex flex-col shadow-xl hover:border-slate-700/70 hover:shadow-black/20 glass">
             
             {/* Titre Formation centré */}

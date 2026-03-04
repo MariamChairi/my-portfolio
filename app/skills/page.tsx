@@ -31,7 +31,7 @@ export default function Skills() {
           <div className="w-6 h-6 bg-green-500 rounded-full" />
           <div className="ml-4 font-mono text-sm text-muted-foreground">~/skills</div>
         </div>
-        <h1 className="text-6xl md:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
+        <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
           SKILLS/
         </h1>
         <div className="text-lg text-muted-foreground font-mono">5 catégories, 10+ technos</div>
@@ -42,7 +42,7 @@ export default function Skills() {
         {categories.map((category, i) => {
           const items = skills[category.name as keyof typeof skills]
           return (
-            <div key={i} className="group h-[420px] hover:shadow-2xl">
+            <div key={i} className="group h-auto md:h-[420px] hover:shadow-2xl">
               <div className="bg-card border-2 border-border/50 rounded-3xl p-8 h-full flex flex-col shadow-lg hover:border-primary/50 hover:shadow-xl glass">
                 
                 {/* Header catégorie avec couleur unique */}
