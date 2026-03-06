@@ -62,7 +62,7 @@ export default function RootLayout({
         </nav>
         
         {/* CONTENU PRINCIPAL - Z-INDEX 10 */}
-        <main className="relative z-10 min-h-screen py-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
+        <main className="relative min-h-screen py-16 px-4 md:px-8 max-w-7xl mx-auto overflow-hidden">
           {children}
         </main>
         
