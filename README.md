@@ -14,7 +14,7 @@
 
 ## 🛠️ Tech Stack
 
-| **Core** | **Styling** | **UI** | **Deployment** |
-|----------|-------------|--------|---------------|
-| Next.js | Tailwind CSS | shadcn/ui | Vercel |
-| React | CSS Modules | Radix UI | GitHub |
+| **Core** | **Styling** | **Deployment** |
+|----------|-------------|---------------|
+| Next.js | Tailwind CSS | Vercel |
+| React | CSS Modules | GitHub |
