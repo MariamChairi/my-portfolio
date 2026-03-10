@@ -7,7 +7,7 @@
 ## ✨ Features
 - 🎨 **Dark Terminal UI** - Sleek glassmorphism design
 - ⚡ **App Router** - Smooth navigation
-- 🎯 **Interactive Skills** - Custom dark scrollbars
+- 🎯 **Skills + Projects** - Custom dark scrollbars
 - 👤 **Profile + Education** - Elegant About section
 - 📞 **Direct Contact** - LinkedIn + GitHub
 - 📱 **Mobile Compatible** - Responsive design for all devices
