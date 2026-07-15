@@ -70,7 +70,7 @@ export default function RootLayout({
         <footer className="z-20 backdrop-blur-xl bg-card/95 border-t border-border/50 shadow-xl">
   <div className="max-w-6xl mx-auto px-6 py-3 text-[11px] font-mono">
     <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-8 text-center text-muted-foreground/70">
-      <span>📁 12+ Projets</span>
+      <span>📁 5+ Projets</span>
       <span>•</span>
       <span>⚙️ 10+ Technos</span>
       <span>•</span>
