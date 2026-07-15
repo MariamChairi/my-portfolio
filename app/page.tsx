@@ -42,7 +42,7 @@ export default function Home() {
         {/* Stats 3D */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-24">
           <div className="group bg-card/85 backdrop-blur-xl rounded-3xl p-12 border border-border/50 glass">
-            <div className="text-3xl sm:text-5xl md:text-6xl font-mono font-bold text-primary mb-6">12+</div>
+            <div className="text-3xl sm:text-5xl md:text-6xl font-mono font-bold text-primary mb-6">5+</div>
             <div className="font-mono text-lg uppercase tracking-wider text-muted-foreground mb-2">projets</div>
             <div className="text-sm font-mono text-muted-foreground/70">Spring • Django • Docker</div>
           </div>
