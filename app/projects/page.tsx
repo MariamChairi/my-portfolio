@@ -79,7 +79,7 @@ export default function Projects() {
   }, [selected])
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-12">
+    <div className="max-w-6xl mx-auto">
 
       {/* Header */}
       <div className="text-center mb-24">
