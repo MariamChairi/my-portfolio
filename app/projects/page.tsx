@@ -82,18 +82,18 @@ export default function Projects() {
     <div className="max-w-6xl mx-auto px-4 py-12">
 
       {/* Header */}
-      <div className="text-center mb-16">
-        <div className="inline-flex items-center space-x-4 p-4 md:p-6 bg-card/80 backdrop-blur-xl rounded-3xl border border-muted mb-6 shadow-2xl">
+      <div className="text-center mb-24">
+        <div className="inline-flex items-center space-x-4 p-6 bg-card/80 backdrop-blur-xl rounded-3xl border border-muted mb-12 shadow-2xl">
           <div className="w-6 h-6 bg-red-500 rounded-full" />
           <div className="w-6 h-6 bg-yellow-500 rounded-full" />
           <div className="w-6 h-6 bg-green-500 rounded-full" />
           <div className="ml-4 font-mono text-sm text-muted-foreground">~/projects</div>
         </div>
-
+        
         <h1 className="text-3xl sm:text-5xl md:text-7xl lg:text-8xl font-mono tracking-widest bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
-          PROJETS/
+          PROJECTS/
         </h1>
-
+        
         <div className="text-lg text-muted-foreground font-mono">
           {projects.length} dossiers, {projects.length} fichiers
         </div>
