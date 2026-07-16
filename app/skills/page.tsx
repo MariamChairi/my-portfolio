@@ -38,7 +38,7 @@ export default function Skills() {
       </div>
 
       {/* Grille catégories - NOUVEAU STYLE */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 p-8 mb-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-16 mb-20">
         {categories.map((category, i) => {
           const items = skills[category.name as keyof typeof skills]
           return (

@@ -1,9 +1,9 @@
 export default function About() {
   return (
-    <div className="max-w-6xl mx-auto px-4">
+    <div className="max-w-6xl mx-auto">
       
       {/* Header */}
-      <div className="text-center mb-20">
+      <div className="text-center mb-24">
         <div className="inline-flex items-center space-x-4 p-6 bg-card/80 backdrop-blur-xl rounded-3xl border border-muted mb-12 shadow-2xl">
           <div className="w-6 h-6 bg-red-500 rounded-full" />
           <div className="w-6 h-6 bg-yellow-500 rounded-full" />
@@ -23,10 +23,10 @@ export default function About() {
       </div>
 
       {/* Grid */}
-      <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-start mb-20">
+      <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-16 mb-20"> 
 
         {/* Profil */}
-        <div className="group min-h-[500px] hover:shadow-2xl relative">
+        <div className="group hover:shadow-2xl relative">
           <div className="bg-card border-2 border-slate-800/50 rounded-3xl p-6 md:p-8 h-full flex flex-col shadow-xl hover:border-slate-700/70 hover:shadow-black/20 glass overflow-hidden">
 
             {/* Terminal header */}
@@ -107,7 +107,7 @@ export default function About() {
         </div>
 
         {/* Formation */}
-        <div className="group min-h-[500px] hover:shadow-2xl relative">
+        <div className="group hover:shadow-2xl relative">
           <div className="bg-card border-2 border-slate-800/50 rounded-3xl p-6 md:p-8 h-full flex flex-col shadow-xl hover:border-slate-700/70 hover:shadow-black/20 glass overflow-hidden">
 
             {/* Title */}
